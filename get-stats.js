@@ -30,25 +30,31 @@ function getQuestions() {
 function getAnswers(questionId) {
   // https://api.stackexchange.com/docs/answers-on-questions
   return apiCall(`/questions/${questionId}/answers`, {
-    filter: '!nKzQURF6Y5',
+    filter: '!nKzQURFm*e',
     pagesize: 100,
   });
 }
 
 function extractAnswerInfo(answer) {
-  const rawTitle = answer.body.split('\n', 2)[0];
+  const rawTitle = answer.body_markdown.split('\n', 2)[0].trim();
   const bytes = parseInt(rawTitle.match(/(\d+) bytes?/)[1], 10);
+
+  let language = rawTitle.substring(2).split(',', 2)[0];
+  if (language.startsWith('[')) {
+    language = language.substring(1, language.lastIndexOf(']'));
+  }
 
   return {
     rawTitle,
-    score: answer.score,
     questionId: answer.question_id,
     answerId: answer.answer_id,
+    score: answer.score,
     bytes,
+    language,
   };
 }
 
 // const questions = await getQuestions();
 const answers = await getAnswers(248537);
-console.log(answers.items[0]);
+// console.log(answers.items[0]);
 console.log(extractAnswerInfo(answers.items[0]));
