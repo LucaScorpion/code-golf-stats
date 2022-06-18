@@ -1,0 +1,14 @@
+{
+  "name": "code-golf-stats",
+  "version": "0.1.0",
+  "description": "",
+  "main": "get-stats.js",
+  "scripts": {
+    "start": "node get-stats.js"
+  },
+  "type": "module",
+  "license": "ISC",
+  "dependencies": {
+    "node-fetch": "^3.2.6"
+  }
+}
