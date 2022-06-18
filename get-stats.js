@@ -7,7 +7,12 @@ const baseUrl = 'https://api.stackexchange.com/2.3';
 const codeGolfSite = 'codegolf';
 
 // Skip questions with these tags.
-const skipQuestionTags = ['cops-and-robbers', 'king-of-the-hill', 'popularity-contest]'];
+const skipQuestionTags = [
+  'cops-and-robbers',
+  'king-of-the-hill',
+  'polyglot',
+  'popularity-contest',
+];
 
 async function apiCall(path, params) {
   const totalParams = new URLSearchParams({
