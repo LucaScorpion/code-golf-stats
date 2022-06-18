@@ -1,34 +1,23 @@
 import React, { useEffect, useState } from 'react';
 import './App.css';
 import { getData, Question } from './data';
+import { LanguageFrequency } from './charts/LanguageFrequency';
 
 export const App: React.FC = () => {
-  const [data, setData] = useState<Question[]>();
+  const [rawData, setRawData] = useState<Question[]>();
 
   useEffect(() => {
-    getData().then(setData);
+    getData().then(setRawData);
   }, []);
 
-  if (!data) {
-    return <div>'Loading...'</div>;
+  if (!rawData) {
+    return <div>Loading...</div>;
   }
 
   return (
     <div className="App">
-      {data[0].title}
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Code Golf Stats</h1>
+      <LanguageFrequency rawData={rawData} />
     </div>
   );
 };
