@@ -63,6 +63,7 @@ function extractAnswerInfo(answer) {
   // Get the "title" of the post, i.e. the first heading (line starting with "# ").
   // Discard anything before that.
   // Note that this also works if there is no heading, then it will simply try the first line.
+  // TODO: This should actually check for "# " at the start of a line, not just anywhere.
   const rawTitle = md.substring(md.indexOf('# ')).split('\n', 2)[0].trim();
 
   // Get the N in "N byte(s)" from the title.
