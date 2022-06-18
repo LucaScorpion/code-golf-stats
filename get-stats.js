@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 import fetch from 'node-fetch';
 import * as fs from 'node:fs/promises';
+import 'dotenv/config';
 
 // API info.
 const baseUrl = 'https://api.stackexchange.com/2.3';
@@ -14,10 +15,17 @@ const skipQuestionTags = [
   'popularity-contest',
 ];
 
+const apiKey = process.env.SO_API_KEY;
+if (!apiKey) {
+  console.error('No API key given, please make sure SO_API_KEY is set.');
+  process.exit(1);
+}
+
 async function apiCall(path, params) {
   const totalParams = new URLSearchParams({
-    site: codeGolfSite,
     ...params,
+    site: codeGolfSite,
+    key: apiKey,
   });
   const response = await fetch(`${baseUrl}${path}?${totalParams}`);
   const body = await response.json();

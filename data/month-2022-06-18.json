@@ -2457,6 +2457,213 @@
     ]
   },
   {
+    "questionId": 248690,
+    "score": 17,
+    "title": "Is it a valid list?",
+    "answers": [
+      {
+        "rawTitle": "# Python 2, 10 bytes",
+        "questionId": 248690,
+        "answerId": 248786,
+        "score": 0,
+        "bytes": 10,
+        "language": "Python 2"
+      },
+      {
+        "rawTitle": "# C, 178 bytes",
+        "questionId": 248690,
+        "answerId": 248769,
+        "score": 1,
+        "bytes": 178,
+        "language": "C"
+      },
+      {
+        "rawTitle": "# [Charcoal], 29 bytes",
+        "questionId": 248690,
+        "answerId": 248759,
+        "score": 1,
+        "bytes": 29,
+        "language": "Charcoal"
+      },
+      {
+        "rawTitle": "# [Retina 0.8.2], &lt;s&gt;39&lt;/s&gt; &lt;s&gt;35&lt;/s&gt; 23 bytes",
+        "questionId": 248690,
+        "answerId": 248700,
+        "score": 2,
+        "bytes": 23,
+        "language": "Retina 0.8.2"
+      },
+      {
+        "rawTitle": "# Regex (Perl / PCRE), 21 bytes",
+        "questionId": 248690,
+        "answerId": 248747,
+        "score": 2,
+        "bytes": 21,
+        "language": "Regex (Perl / PCRE)"
+      },
+      {
+        "rawTitle": "# Javascript, &lt;s&gt;79&lt;/s&gt; &lt;s&gt;78&lt;/s&gt; 77 bytes",
+        "questionId": 248690,
+        "answerId": 248748,
+        "score": 2,
+        "bytes": 77,
+        "language": "Javascript"
+      },
+      {
+        "rawTitle": "# [SNOBOL4 (CSNOBOL4)], 84 bytes",
+        "questionId": 248690,
+        "answerId": 248744,
+        "score": 2,
+        "bytes": 84,
+        "language": "SNOBOL4 (CSNOBOL4)"
+      },
+      {
+        "rawTitle": "# [Stax](https://github.com/tomtheisen/stax), &lt;s&gt;22&lt;/s&gt; 23 [bytes](https://github.com/tomtheisen/stax/blob/master/docs/packed.md#packed-stax)",
+        "questionId": 248690,
+        "answerId": 248701,
+        "score": 5,
+        "bytes": 23,
+        "language": "Stax"
+      },
+      {
+        "rawTitle": "# [Wolfram Language (Mathematica)], 31 bytes",
+        "questionId": 248690,
+        "answerId": 248741,
+        "score": 1,
+        "bytes": 31,
+        "language": "Wolfram Language (Mathematica)"
+      },
+      {
+        "rawTitle": "# [C (gcc)], 136 bytes",
+        "questionId": 248690,
+        "answerId": 248739,
+        "score": 1,
+        "bytes": 136,
+        "language": "C (gcc)"
+      },
+      {
+        "rawTitle": "# [Raku](https://raku.org/), 31 bytes",
+        "questionId": 248690,
+        "answerId": 248737,
+        "score": 2,
+        "bytes": 31,
+        "language": "Raku"
+      },
+      {
+        "rawTitle": "# Haskell (GHCi), 0 bytes",
+        "questionId": 248690,
+        "answerId": 248696,
+        "score": 1,
+        "bytes": 0,
+        "language": "Haskell (GHCi)"
+      },
+      {
+        "rawTitle": "# [R](https://www.r-project.org), 101 bytes",
+        "questionId": 248690,
+        "answerId": 248725,
+        "score": 3,
+        "bytes": 101,
+        "language": "R"
+      },
+      {
+        "rawTitle": "# [05AB1E](https://github.com/Adriandmen/05AB1E/wiki/Commands), 10 [bytes](https://github.com/Adriandmen/05AB1E/wiki/Codepage)",
+        "questionId": 248690,
+        "answerId": 248723,
+        "score": 2,
+        "bytes": 10,
+        "language": "05AB1E"
+      },
+      {
+        "rawTitle": "# [APL (Dyalog Unicode)], 5 bytes",
+        "questionId": 248690,
+        "answerId": 248694,
+        "score": 6,
+        "bytes": 5,
+        "language": "APL (Dyalog Unicode)"
+      },
+      {
+        "rawTitle": "# [Rust](https://rust-lang.org), 406 bytes",
+        "questionId": 248690,
+        "answerId": 248714,
+        "score": 2,
+        "bytes": 406,
+        "language": "Rust"
+      },
+      {
+        "rawTitle": "# Haskell + [hgl], 26 bytes",
+        "questionId": 248690,
+        "answerId": 248713,
+        "score": 7,
+        "bytes": 26,
+        "language": "Haskell + [hgl]"
+      },
+      {
+        "rawTitle": "# [Python](https://www.python.org), 19 bytes (@dingledooper)",
+        "questionId": 248690,
+        "answerId": 248709,
+        "score": 6,
+        "bytes": 19,
+        "language": "Python"
+      },
+      {
+        "rawTitle": "# [Factor] + `json.reader`, 5 bytes",
+        "questionId": 248690,
+        "answerId": 248711,
+        "score": 2,
+        "bytes": 5,
+        "language": "Factor"
+      },
+      {
+        "rawTitle": "# [Curry (PAKCS)], 29 bytes",
+        "questionId": 248690,
+        "answerId": 248710,
+        "score": 5,
+        "bytes": 29,
+        "language": "Curry (PAKCS)"
+      },
+      {
+        "rawTitle": "# [PARI/GP](https://pari.math.u-bordeaux.fr), 0 bytes",
+        "questionId": 248690,
+        "answerId": 248704,
+        "score": 7,
+        "bytes": 0,
+        "language": "PARI/GP"
+      },
+      {
+        "rawTitle": "# [Vyxal](https://github.com/Vyxal/Vyxal) `P`, 8 bytes",
+        "questionId": 248690,
+        "answerId": 248703,
+        "score": 3,
+        "bytes": 8,
+        "language": "Vyxal"
+      },
+      {
+        "rawTitle": "# [Whython](https://github.com/pxeger/whython), 36 bytes",
+        "questionId": 248690,
+        "answerId": 248698,
+        "score": 4,
+        "bytes": 36,
+        "language": "Whython"
+      },
+      {
+        "rawTitle": "# Python3, 70 bytes:",
+        "questionId": 248690,
+        "answerId": 248692,
+        "score": 8,
+        "bytes": 70,
+        "language": "Python3"
+      },
+      {
+        "rawTitle": "# JavaScript, 10 bytes",
+        "questionId": 248690,
+        "answerId": 248695,
+        "score": 12,
+        "bytes": 10,
+        "language": "JavaScript"
+      }
+    ]
+  },
+  {
     "questionId": 248324,
     "score": 17,
     "title": "Concatenatable numbers",
@@ -2897,213 +3104,6 @@
         "score": 5,
         "bytes": 34,
         "language": "APL (Dyalog Extended)"
-      }
-    ]
-  },
-  {
-    "questionId": 248690,
-    "score": 16,
-    "title": "Is it a valid list?",
-    "answers": [
-      {
-        "rawTitle": "# Python 2, 10 bytes",
-        "questionId": 248690,
-        "answerId": 248786,
-        "score": 0,
-        "bytes": 10,
-        "language": "Python 2"
-      },
-      {
-        "rawTitle": "# C, 178 bytes",
-        "questionId": 248690,
-        "answerId": 248769,
-        "score": 1,
-        "bytes": 178,
-        "language": "C"
-      },
-      {
-        "rawTitle": "# [Charcoal], 29 bytes",
-        "questionId": 248690,
-        "answerId": 248759,
-        "score": 1,
-        "bytes": 29,
-        "language": "Charcoal"
-      },
-      {
-        "rawTitle": "# [Retina 0.8.2], &lt;s&gt;39&lt;/s&gt; &lt;s&gt;35&lt;/s&gt; 23 bytes",
-        "questionId": 248690,
-        "answerId": 248700,
-        "score": 2,
-        "bytes": 23,
-        "language": "Retina 0.8.2"
-      },
-      {
-        "rawTitle": "# Regex (Perl / PCRE), 21 bytes",
-        "questionId": 248690,
-        "answerId": 248747,
-        "score": 2,
-        "bytes": 21,
-        "language": "Regex (Perl / PCRE)"
-      },
-      {
-        "rawTitle": "# Javascript, &lt;s&gt;79&lt;/s&gt; &lt;s&gt;78&lt;/s&gt; 77 bytes",
-        "questionId": 248690,
-        "answerId": 248748,
-        "score": 2,
-        "bytes": 77,
-        "language": "Javascript"
-      },
-      {
-        "rawTitle": "# [SNOBOL4 (CSNOBOL4)], 84 bytes",
-        "questionId": 248690,
-        "answerId": 248744,
-        "score": 2,
-        "bytes": 84,
-        "language": "SNOBOL4 (CSNOBOL4)"
-      },
-      {
-        "rawTitle": "# [Stax](https://github.com/tomtheisen/stax), &lt;s&gt;22&lt;/s&gt; 23 [bytes](https://github.com/tomtheisen/stax/blob/master/docs/packed.md#packed-stax)",
-        "questionId": 248690,
-        "answerId": 248701,
-        "score": 5,
-        "bytes": 23,
-        "language": "Stax"
-      },
-      {
-        "rawTitle": "# [Wolfram Language (Mathematica)], 31 bytes",
-        "questionId": 248690,
-        "answerId": 248741,
-        "score": 1,
-        "bytes": 31,
-        "language": "Wolfram Language (Mathematica)"
-      },
-      {
-        "rawTitle": "# [C (gcc)], 136 bytes",
-        "questionId": 248690,
-        "answerId": 248739,
-        "score": 1,
-        "bytes": 136,
-        "language": "C (gcc)"
-      },
-      {
-        "rawTitle": "# [Raku](https://raku.org/), 31 bytes",
-        "questionId": 248690,
-        "answerId": 248737,
-        "score": 2,
-        "bytes": 31,
-        "language": "Raku"
-      },
-      {
-        "rawTitle": "# Haskell (GHCi), 0 bytes",
-        "questionId": 248690,
-        "answerId": 248696,
-        "score": 1,
-        "bytes": 0,
-        "language": "Haskell (GHCi)"
-      },
-      {
-        "rawTitle": "# [R](https://www.r-project.org), 101 bytes",
-        "questionId": 248690,
-        "answerId": 248725,
-        "score": 3,
-        "bytes": 101,
-        "language": "R"
-      },
-      {
-        "rawTitle": "# [05AB1E](https://github.com/Adriandmen/05AB1E/wiki/Commands), 10 [bytes](https://github.com/Adriandmen/05AB1E/wiki/Codepage)",
-        "questionId": 248690,
-        "answerId": 248723,
-        "score": 2,
-        "bytes": 10,
-        "language": "05AB1E"
-      },
-      {
-        "rawTitle": "# [APL (Dyalog Unicode)], 5 bytes",
-        "questionId": 248690,
-        "answerId": 248694,
-        "score": 6,
-        "bytes": 5,
-        "language": "APL (Dyalog Unicode)"
-      },
-      {
-        "rawTitle": "# [Rust](https://rust-lang.org), 406 bytes",
-        "questionId": 248690,
-        "answerId": 248714,
-        "score": 2,
-        "bytes": 406,
-        "language": "Rust"
-      },
-      {
-        "rawTitle": "# Haskell + [hgl], 26 bytes",
-        "questionId": 248690,
-        "answerId": 248713,
-        "score": 7,
-        "bytes": 26,
-        "language": "Haskell + [hgl]"
-      },
-      {
-        "rawTitle": "# [Python](https://www.python.org), 19 bytes (@dingledooper)",
-        "questionId": 248690,
-        "answerId": 248709,
-        "score": 6,
-        "bytes": 19,
-        "language": "Python"
-      },
-      {
-        "rawTitle": "# [Factor] + `json.reader`, 5 bytes",
-        "questionId": 248690,
-        "answerId": 248711,
-        "score": 2,
-        "bytes": 5,
-        "language": "Factor"
-      },
-      {
-        "rawTitle": "# [Curry (PAKCS)], 29 bytes",
-        "questionId": 248690,
-        "answerId": 248710,
-        "score": 5,
-        "bytes": 29,
-        "language": "Curry (PAKCS)"
-      },
-      {
-        "rawTitle": "# [PARI/GP](https://pari.math.u-bordeaux.fr), 0 bytes",
-        "questionId": 248690,
-        "answerId": 248704,
-        "score": 7,
-        "bytes": 0,
-        "language": "PARI/GP"
-      },
-      {
-        "rawTitle": "# [Vyxal](https://github.com/Vyxal/Vyxal) `P`, 8 bytes",
-        "questionId": 248690,
-        "answerId": 248703,
-        "score": 3,
-        "bytes": 8,
-        "language": "Vyxal"
-      },
-      {
-        "rawTitle": "# [Whython](https://github.com/pxeger/whython), 36 bytes",
-        "questionId": 248690,
-        "answerId": 248698,
-        "score": 4,
-        "bytes": 36,
-        "language": "Whython"
-      },
-      {
-        "rawTitle": "# Python3, 70 bytes:",
-        "questionId": 248690,
-        "answerId": 248692,
-        "score": 8,
-        "bytes": 70,
-        "language": "Python3"
-      },
-      {
-        "rawTitle": "# JavaScript, 10 bytes",
-        "questionId": 248690,
-        "answerId": 248695,
-        "score": 12,
-        "bytes": 10,
-        "language": "JavaScript"
       }
     ]
   },
@@ -4156,6 +4156,14 @@
     "title": "Truncate words in a sentence",
     "answers": [
       {
+        "rawTitle": "# [Python](https://www.python.org), 57 bytes",
+        "questionId": 248753,
+        "answerId": 248780,
+        "score": 1,
+        "bytes": 57,
+        "language": "Python"
+      },
+      {
         "rawTitle": "# [R](https://www.r-project.org), 38 bytes",
         "questionId": 248753,
         "answerId": 248779,
@@ -4170,14 +4178,6 @@
         "score": 0,
         "bytes": 38,
         "language": "Pip"
-      },
-      {
-        "rawTitle": "# [Python](https://www.python.org), 57 bytes",
-        "questionId": 248753,
-        "answerId": 248780,
-        "score": 1,
-        "bytes": 57,
-        "language": "Python"
       },
       {
         "rawTitle": "# [Factor], &lt;s&gt;58&lt;/s&gt; &lt;s&gt;50&lt;/s&gt; 48 bytes",
@@ -5269,44 +5269,5 @@
     "score": -4,
     "title": "Draw the Qu&#233;bec flag",
     "answers": []
-  },
-  {
-    "questionId": 248680,
-    "score": -11,
-    "title": "12 with no 1234567890, but polyglot",
-    "answers": [
-      {
-        "rawTitle": "# 6+ languages, 24 bytes, score &lt; 0.67",
-        "questionId": 248680,
-        "answerId": 248684,
-        "score": 2,
-        "bytes": 24,
-        "language": "6+ languages"
-      },
-      {
-        "rawTitle": "# JavaScript (jsshell), Python 3, bash (core utils)?, brainfuck, 109 bytes",
-        "questionId": 248680,
-        "answerId": 248712,
-        "score": 1,
-        "bytes": 109,
-        "language": "JavaScript (jsshell)"
-      },
-      {
-        "rawTitle": "# brainfuck, [Headass](https://esolangs.org/wiki/Headass), Javascript; 3 languages, 52 bytes",
-        "questionId": 248680,
-        "answerId": 248702,
-        "score": 2,
-        "bytes": 52,
-        "language": "brainfuck"
-      },
-      {
-        "rawTitle": "# 5 Languages - [Keg](https://github.com/Lyxal/Keg), [Vyxal](https://github.com/Vyxal/Vyxal), [Python 3](https://docs.python.org/3/), [05AB1E](https://github.com/Adriandmen/05AB1E) and [Curlyfrick](https://github.com/Lyxal/CFEsolang), 114 bytes",
-        "questionId": 248680,
-        "answerId": 248682,
-        "score": 3,
-        "bytes": 114,
-        "language": "5 Languages - [Keg](https://github.com/Lyxal/Keg)"
-      }
-    ]
   }
 ]
