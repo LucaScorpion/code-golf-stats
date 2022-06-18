@@ -23,7 +23,7 @@ function getQuestions() {
   return apiCall('/questions', {
     filter: '!nKzQUR3Egv',
     sort: 'month',
-    // pagesize: 100,
+    pagesize: 100,
   });
 }
 
@@ -35,8 +35,20 @@ function getAnswers(questionId) {
   });
 }
 
-const questions = await getQuestions();
-console.log(questions.items[0]);
+function extractAnswerInfo(answer) {
+  const rawTitle = answer.body.split('\n', 2)[0];
+  const bytes = parseInt(rawTitle.match(/(\d+) bytes?/)[1], 10);
 
-const answers = await getAnswers(questions.items[0].question_id);
+  return {
+    rawTitle,
+    score: answer.score,
+    questionId: answer.question_id,
+    answerId: answer.answer_id,
+    bytes,
+  };
+}
+
+// const questions = await getQuestions();
+const answers = await getAnswers(248537);
 console.log(answers.items[0]);
+console.log(extractAnswerInfo(answers.items[0]));
