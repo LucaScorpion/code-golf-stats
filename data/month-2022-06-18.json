@@ -1,0 +1,289 @@
+[
+  {
+    "questionId": 247835,
+    "score": 33,
+    "title": "Previous Fibonacci number",
+    "answers": [
+      {
+        "rawTitle": "[BitCycle (-u)][1], 93 bytes",
+        "questionId": 247835,
+        "answerId": 248745,
+        "score": 1,
+        "bytes": 93,
+        "language": "itCycle (-u)][1]"
+      },
+      {
+        "rawTitle": "# [Pip](https://github.com/dloscutoff/pip), 10 bytes",
+        "questionId": 247835,
+        "answerId": 248523,
+        "score": 3,
+        "bytes": 10,
+        "language": "Pip"
+      },
+      {
+        "rawTitle": "# [APL(Dyalog Unicode)][1], &lt;sup&gt;&lt;s&gt;&lt;/s&gt;&lt;/sup&gt;17 bytes &lt;sup&gt;[SBCS][2]&lt;/sup&gt;",
+        "questionId": 247835,
+        "answerId": 248505,
+        "score": 2,
+        "bytes": 17,
+        "language": "APL(Dyalog Unicode)"
+      },
+      {
+        "rawTitle": "# [K (ngn/k)], &lt;s&gt;12&lt;/s&gt; 11 bytes",
+        "questionId": 247835,
+        "answerId": 248476,
+        "score": 2,
+        "bytes": 11,
+        "language": "K (ngn/k)"
+      },
+      {
+        "rawTitle": "# [K (ngn/k)], &lt;s&gt;21&lt;/s&gt; 22 bytes",
+        "questionId": 247835,
+        "answerId": 248103,
+        "score": 1,
+        "bytes": 22,
+        "language": "K (ngn/k)"
+      },
+      {
+        "rawTitle": "# [Stax](https://github.com/tomtheisen/stax), 10 [bytes](https://github.com/tomtheisen/stax/blob/master/docs/packed.md#packed-stax)",
+        "questionId": 247835,
+        "answerId": 248038,
+        "score": 3,
+        "bytes": 10,
+        "language": "Stax"
+      },
+      {
+        "rawTitle": "# [Rattle](https://github.com/DRH001/Rattle), 17 bytes",
+        "questionId": 247835,
+        "answerId": 248034,
+        "score": 2,
+        "bytes": 17,
+        "language": "Rattle"
+      },
+      {
+        "rawTitle": "# [Husk], 6 bytes",
+        "questionId": 247835,
+        "answerId": 247853,
+        "score": 2,
+        "bytes": 6,
+        "language": "Husk"
+      },
+      {
+        "rawTitle": "# [Vyxal](https://github.com/Vyxal/Vyxal), 6 bytes",
+        "questionId": 247835,
+        "answerId": 247837,
+        "score": 2,
+        "bytes": 6,
+        "language": "Vyxal"
+      },
+      {
+        "rawTitle": "# [Husk], 5 bytes",
+        "questionId": 247835,
+        "answerId": 247923,
+        "score": 3,
+        "bytes": 5,
+        "language": "Husk"
+      },
+      {
+        "rawTitle": "# x86-64 assembly, &lt;s&gt;13&lt;/s&gt; 12 bytes",
+        "questionId": 247835,
+        "answerId": 247858,
+        "score": 9,
+        "bytes": 12,
+        "language": "x86-64 assembly"
+      },
+      {
+        "rawTitle": "# [Python 3], &lt;s&gt;50 bytes&lt;/s&gt; 48 bytes",
+        "questionId": 247835,
+        "answerId": 247893,
+        "score": 3,
+        "bytes": 50,
+        "language": "Python 3"
+      },
+      {
+        "rawTitle": "# [R](https://www.r-project.org), &lt;s&gt;23&lt;/s&gt; &lt;s&gt;22&lt;/s&gt; 20 bytes",
+        "questionId": 247835,
+        "answerId": 247850,
+        "score": 13,
+        "bytes": 20,
+        "language": "R"
+      },
+      {
+        "rawTitle": "# JavaScript, &lt;s&gt;21&lt;/s&gt; 17 bytes",
+        "questionId": 247835,
+        "answerId": 247840,
+        "score": 11,
+        "bytes": 17,
+        "language": "JavaScript"
+      },
+      {
+        "rawTitle": "# [C (gcc)], 27 bytes",
+        "questionId": 247835,
+        "answerId": 247901,
+        "score": 1,
+        "bytes": 27,
+        "language": "C (gcc)"
+      },
+      {
+        "rawTitle": "# [Jelly], 4 bytes",
+        "questionId": 247835,
+        "answerId": 247897,
+        "score": 3,
+        "bytes": 4,
+        "language": "Jelly"
+      },
+      {
+        "rawTitle": "# [Haskell], &lt;s&gt;38&lt;/s&gt; 37 bytes",
+        "questionId": 247835,
+        "answerId": 247891,
+        "score": 4,
+        "bytes": 37,
+        "language": "Haskell"
+      },
+      {
+        "rawTitle": "# Haskell, 57 bytes (or 14 bytes)",
+        "questionId": 247835,
+        "answerId": 247881,
+        "score": 2,
+        "bytes": 57,
+        "language": "Haskell"
+      },
+      {
+        "rawTitle": "# [PowerShell], 31 bytes",
+        "questionId": 247835,
+        "answerId": 247883,
+        "score": 3,
+        "bytes": 31,
+        "language": "PowerShell"
+      },
+      {
+        "rawTitle": "# [Python 3], &lt;s&gt;29&lt;/s&gt; &lt;s&gt;28&lt;/s&gt; &lt;s&gt;27&lt;/s&gt; 24 bytes",
+        "questionId": 247835,
+        "answerId": 247844,
+        "score": 5,
+        "bytes": 24,
+        "language": "Python 3"
+      },
+      {
+        "rawTitle": "# [PARI/GP](https://pari.math.u-bordeaux.fr), 16 bytes",
+        "questionId": 247835,
+        "answerId": 247859,
+        "score": 3,
+        "bytes": 16,
+        "language": "PARI/GP"
+      },
+      {
+        "rawTitle": "# [MathGolf](https://github.com/maxbergmark/mathgolf/blob/master/math_golf.txt), &lt;s&gt;6&lt;/s&gt; 4 [bytes](https://github.com/maxbergmark/mathgolf/blob/master/code_page.py)",
+        "questionId": 247835,
+        "answerId": 247848,
+        "score": 4,
+        "bytes": 4,
+        "language": "MathGolf"
+      },
+      {
+        "rawTitle": "# [C(gcc)][1], &lt;s&gt;57,55,53,50,45&lt;/s&gt;, 36 bytes",
+        "questionId": 247835,
+        "answerId": 247849,
+        "score": 9,
+        "bytes": 36,
+        "language": "C(gcc)"
+      },
+      {
+        "rawTitle": "# [Factor] + `math.unicode`, &lt;s&gt;21&lt;/s&gt; &lt;s&gt;19&lt;/s&gt; &lt;s&gt;18&lt;/s&gt; 14 bytes",
+        "questionId": 247835,
+        "answerId": 247839,
+        "score": 8,
+        "bytes": 14,
+        "language": "Factor"
+      },
+      {
+        "rawTitle": "# [Desmos](https://desmos.com/calculator), 25 bytes",
+        "questionId": 247835,
+        "answerId": 247855,
+        "score": 2,
+        "bytes": 25,
+        "language": "Desmos"
+      },
+      {
+        "rawTitle": "# [Retina 0.8.2], 26 bytes",
+        "questionId": 247835,
+        "answerId": 247854,
+        "score": 3,
+        "bytes": 26,
+        "language": "Retina 0.8.2"
+      },
+      {
+        "rawTitle": "# [Wolfram Language (Mathematica)], 17 bytes",
+        "questionId": 247835,
+        "answerId": 247852,
+        "score": 5,
+        "bytes": 17,
+        "language": "Wolfram Language (Mathematica)"
+      },
+      {
+        "rawTitle": "# [Charcoal], 24 bytes",
+        "questionId": 247835,
+        "answerId": 247851,
+        "score": 1,
+        "bytes": 24,
+        "language": "Charcoal"
+      },
+      {
+        "rawTitle": "# [Vyxal](https://github.com/Vyxal/Vyxal), 4 bytes",
+        "questionId": 247835,
+        "answerId": 247842,
+        "score": 17,
+        "bytes": 4,
+        "language": "Vyxal"
+      },
+      {
+        "rawTitle": "# [05AB1E](https://github.com/Adriandmen/05AB1E/wiki/Commands), 4 [bytes](https://github.com/Adriandmen/05AB1E/wiki/Codepage)",
+        "questionId": 247835,
+        "answerId": 247846,
+        "score": 4,
+        "bytes": 4,
+        "language": "05AB1E"
+      },
+      {
+        "rawTitle": "# [rSNBATWPL](https://github.com/Radvylf/rSNBATWPL), 31 bytes",
+        "questionId": 247835,
+        "answerId": 247845,
+        "score": 2,
+        "bytes": 31,
+        "language": "rSNBATWPL"
+      },
+      {
+        "rawTitle": "# [Python 3], 41 bytes",
+        "questionId": 247835,
+        "answerId": 247843,
+        "score": 5,
+        "bytes": 41,
+        "language": "Python 3"
+      },
+      {
+        "rawTitle": "# [rSNBATWPL](https://github.com/Radvylf/rSNBATWPL), 32 bytes",
+        "questionId": 247835,
+        "answerId": 247841,
+        "score": 2,
+        "bytes": 32,
+        "language": "rSNBATWPL"
+      },
+      {
+        "rawTitle": "# JavaScript, Node.js, 32 bytes",
+        "questionId": 247835,
+        "answerId": 247836,
+        "score": 4,
+        "bytes": 32,
+        "language": "JavaScript"
+      },
+      {
+        "rawTitle": "# [R](https://www.r-project.org), 27 bytes",
+        "questionId": 247835,
+        "answerId": 247838,
+        "score": 10,
+        "bytes": 27,
+        "language": "R"
+      }
+    ]
+  }
+]
