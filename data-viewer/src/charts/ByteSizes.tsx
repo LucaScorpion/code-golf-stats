@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { GolfData } from '../data';
 import { AnswerLink } from '../components/AnswerLink';
+import { Bar, BarChart, Tooltip, XAxis, YAxis } from 'recharts';
 
 export interface Props {
   data: GolfData;
@@ -8,6 +9,7 @@ export interface Props {
 
 interface SizesByLanguage {
   language: string;
+  count: number;
   minSize: number;
   maxSize: number;
   avgSize: number;
@@ -15,15 +17,19 @@ interface SizesByLanguage {
 
 export const ByteSizes: React.FC<Props> = ({ data }) => {
   const [sizes] = useState<SizesByLanguage[]>(() =>
-    data.languageAnswers.map((l) => {
-      const bytes = l.answers.map((a) => a.bytes);
-      return ({
-        language: l.language,
-        minSize: bytes.reduce((acc, cur) => acc < cur ? acc : cur),
-        maxSize: bytes.reduce((acc, cur) => acc > cur ? acc : cur),
-        avgSize: bytes.reduce((acc, cur) => acc + cur) / l.answers.length,
-      });
-    }),
+    data.languageAnswers
+      .map((l) => {
+        const bytes = l.answers.map((a) => a.bytes);
+        return ({
+          language: l.language,
+          count: l.answers.length,
+          minSize: bytes.reduce((acc, cur) => acc < cur ? acc : cur),
+          maxSize: bytes.reduce((acc, cur) => acc > cur ? acc : cur),
+          avgSize: Math.round(bytes.reduce((acc, cur) => acc + cur) / l.answers.length),
+        });
+      })
+      .sort((a, b) => b.count - a.count)
+      .slice(0, 10),
   );
   const [answersByLength] = useState(() => data.answers.sort((a, b) => b.bytes - a.bytes));
   const [zeroByteLangs] = useState<string[]>(() =>
@@ -35,6 +41,17 @@ export const ByteSizes: React.FC<Props> = ({ data }) => {
   return (
     <div>
       <h2>Byte Sizes</h2>
+      <p>
+        The minimum, average, and maximum solution length (y) per language (x) for the top 10 languages.
+      </p>
+      <BarChart data={sizes} width={600} height={300}>
+        <XAxis dataKey="language" interval={0} angle={25} textAnchor="start" height={50} />
+        <YAxis />
+        <Tooltip labelClassName="tooltip-label" />
+        <Bar dataKey="minSize" name="Minimum" />
+        <Bar dataKey="avgSize" name="Average" />
+        <Bar dataKey="maxSize" name="Maximum" />
+      </BarChart>
       <div className="row">
         <div>
           <h3>Longest Solutions</h3>

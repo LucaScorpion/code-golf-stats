@@ -20,11 +20,14 @@ export const LanguageFrequency: React.FC<Props> = ({ data }) => {
   return (
     <div>
       <h2>Language Frequency</h2>
+      <p>
+        The total amount of answers (y) per language (x).
+      </p>
       <BarChart data={counts} width={600} height={300}>
         <XAxis dataKey="language" />
         <YAxis />
         <Tooltip labelClassName="tooltip-label" />
-        <Bar dataKey="count" />
+        <Bar dataKey="count" name="Count" />
       </BarChart>
       <div className="row">
         <div>
