@@ -1,6 +1,8 @@
 # Code Golf Stats
 
-Statistics from the [Code Golf Stack Exchange](https://codegolf.stackexchange.com).
+[![Deploy to GitHub Pages](https://github.com/LucaScorpion/code-golf-stats/actions/workflows/deploy.yml/badge.svg)](https://github.com/LucaScorpion/code-golf-stats/actions/workflows/deploy.yml)
+
+Statistics from the [Code Golf Stack Exchange](https://codegolf.stackexchange.com). View the data at: https://lucascorpion.github.io/code-golf-stats
 
 ## Usage
 
