@@ -29,17 +29,17 @@ export const LanguageFrequency: React.FC<Props> = ({ rawData }) => {
   return (
     <div>
       <h2>Language Frequency</h2>
-      <BarChart data={data} width={600} height={600}>
+      <BarChart data={data} width={600} height={300}>
         <XAxis dataKey="language" />
         <YAxis />
         <Tooltip labelClassName="tooltip-label" />
         <Bar dataKey="count" />
       </BarChart>
-      <div>
+      <div className="row">
         <div>
           <h3>Most Used</h3>
           <ol>
-            {data.slice(0, 5).map((d) => (
+            {data.slice(0, 10).map((d) => (
               <li key={d.language}>{d.language} ({d.count})</li>
             ))}
           </ol>
@@ -47,7 +47,7 @@ export const LanguageFrequency: React.FC<Props> = ({ rawData }) => {
         <div>
           <h3>Least Used</h3>
           <ol>
-            {data.slice(data.length - 5).reverse().map((d) => (
+            {data.slice(data.length - 10).reverse().map((d) => (
               <li key={d.language}>{d.language} ({d.count})</li>
             ))}
           </ol>
