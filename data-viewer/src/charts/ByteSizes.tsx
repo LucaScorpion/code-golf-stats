@@ -31,12 +31,7 @@ export const ByteSizes: React.FC<Props> = ({ data }) => {
       .sort((a, b) => b.count - a.count)
       .slice(0, 10),
   );
-  const [answersByLength] = useState(() => data.answers.sort((a, b) => b.bytes - a.bytes));
-  const [zeroByteLangs] = useState<string[]>(() =>
-    data.languageAnswers
-      .filter((l) => l.answers.findIndex((a) => a.bytes === 0) > -1)
-      .map((l) => l.language),
-  );
+  const [answersByLength] = useState(() => [...data.answers].sort((a, b) => b.bytes - a.bytes));
 
   return (
     <div>
@@ -66,12 +61,16 @@ export const ByteSizes: React.FC<Props> = ({ data }) => {
           </ol>
         </div>
         <div>
-          <h3>Languages with Zero-Byte Solutions</h3>
-          <ul>
-            {zeroByteLangs.map((l) => (
-              <li key={l}>{l}</li>
+          <h3>Shortest Solutions</h3>
+          <ol>
+            {answersByLength.slice(answersByLength.length - 10).reverse().map((a) => (
+              <li key={a.answerId}>
+                <AnswerLink answerId={a.answerId}>
+                  {a.bytes} byte{a.bytes === 1 ? '' : 's'} ({a.language})
+                </AnswerLink>
+              </li>
             ))}
-          </ul>
+          </ol>
         </div>
       </div>
     </div>
