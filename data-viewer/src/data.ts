@@ -1,6 +1,6 @@
 const baseUrl = 'https://raw.githubusercontent.com/LucaScorpion/code-golf-stats/main/data/';
 const dataFiles = [
-  'month-2022-06-18.json',
+  'month-2022-06-20.json',
 ];
 
 export interface Question {

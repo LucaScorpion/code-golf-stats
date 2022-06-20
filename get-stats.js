@@ -2,10 +2,12 @@
 import fetch from 'node-fetch';
 import * as fs from 'node:fs/promises';
 import 'dotenv/config';
+import {parse} from 'node-html-parser';
 
 // API info.
 const baseUrl = 'https://api.stackexchange.com/2.3';
 const codeGolfSite = 'codegolf';
+const maxPageSize = 100;
 
 // Skip questions with these tags.
 const skipQuestionTags = [
@@ -42,15 +44,15 @@ async function getQuestions() {
     filter: '!nKzQUR3Egv',
     tagged: 'code-golf',
     sort: 'month',
-    pagesize: 100,
+    pagesize: maxPageSize,
   })).items;
 }
 
 function getAnswers(questionId, page) {
   // https://api.stackexchange.com/docs/answers-on-questions
   return apiCall(`/questions/${questionId}/answers`, {
-    filter: '!nKzQURFm*e',
-    pagesize: 100,
+    filter: '!nKzQURF6Y5',
+    pagesize: maxPageSize,
     page,
   });
 }
@@ -71,30 +73,34 @@ async function getAllAnswers(questionId) {
 }
 
 function extractAnswerInfo(answer) {
-  const md = answer.body_markdown;
+  const html = parse(answer.body);
+  const heading = html.querySelector('h1');
 
-  // Get the "title" of the post, i.e. the first heading (line starting with "# ").
-  // Discard anything before that.
-  // Note that this also works if there is no heading, then it will simply try the first line.
-  // TODO: This should actually check for "# " at the start of a line, not just anywhere.
-  const rawTitle = md.substring(md.indexOf('# ')).split('\n', 2)[0].trim();
+  if (!heading) {
+    console.error(`Could not find heading: https://codegolf.stackexchange.com/a/${answer.answer_id}`);
+    return undefined;
+  }
+
+  const rawTitle = heading.text;
+  const [rawLanguage] = rawTitle.split(',', 2);
+
+  // Get the language.
+  // Notes:
+  // - Sometimes people put extra info in brackets "()", so discard anything after "(".
+  let language = rawLanguage;
+  if (language.includes('(')) {
+    language = language.substring(0, language.indexOf('('));
+  }
+  language = language.trim();
 
   // Get the N in "N byte(s)" from the title.
   // Edge cases:
   // - Don't check for the trailing "s", since it can also be "1 byte".
-  // - Sometimes people make the "bytes" a link, hence the "\[?".
   // - Sometimes people don't put "bytes" at all, or put other info there. I've chosen to ignore those answers.
-  const bytes = parseInt((rawTitle.match(/(\d+) +\[?byte/i) || [])[1], 10);
-
-  let language = rawTitle.substring(2).split(',', 2)[0];
-
-  // Check if the language name is a link.
-  if (language.startsWith('[')) {
-    language = language.substring(1, language.indexOf(']'));
-  }
+  const bytes = parseInt((rawTitle.match(/(\d+) +byte/i) || [])[1], 10);
 
   if (Number.isNaN(bytes) || !language) {
-    console.error(`Could not extract answer info for https://codegolf.stackexchange.com/a/${answer.answer_id}`);
+    console.error(`Could not extract answer info: https://codegolf.stackexchange.com/a/${answer.answer_id}`);
     console.error(rawTitle);
     return;
   }
