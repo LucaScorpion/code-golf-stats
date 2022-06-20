@@ -15,9 +15,9 @@ const skipQuestionTags = [
   'popularity-contest',
 ];
 
-const apiKey = process.env.SO_API_KEY;
+const apiKey = process.env.SE_API_KEY;
 if (!apiKey) {
-  console.error('No API key given, please make sure SO_API_KEY is set.');
+  console.error('No API key given, please make sure SE_API_KEY is set.');
   process.exit(1);
 }
 

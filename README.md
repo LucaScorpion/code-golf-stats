@@ -7,7 +7,7 @@ Statistics from the [Code Golf Stack Exchange](https://codegolf.stackexchange.co
 ## Usage
 
 First, make sure to copy the `.env.example` file to `.env`.
-Here you need to set `SO_API_KEY` to your API key.
+Here you need to set `SE_API_KEY` to your API key.
 
 Run the script:
 
