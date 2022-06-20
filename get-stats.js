@@ -82,12 +82,17 @@ function extractAnswerInfo(answer) {
   }
 
   const rawTitle = heading.text;
-  const [rawLanguage] = rawTitle.split(',', 2);
+  const [rawLanguage] = rawTitle.split(',');
 
   // Get the language.
   // Notes:
+  // - Sometimes people separate the language with a dash instead of a comma.
   // - Sometimes people put extra info in brackets "()", so discard anything after "(".
   let language = rawLanguage;
+  if (language === rawTitle) {
+    // Note: only explicitly check for a dash surrounded by spaces here, since some language names also include a dash.
+    language = language.split(' - ')[0];
+  }
   if (language.includes('(')) {
     language = language.substring(0, language.indexOf('('));
   }

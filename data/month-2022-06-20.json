@@ -3632,6 +3632,101 @@
     ]
   },
   {
+    "questionId": 248820,
+    "score": 15,
+    "title": "Create Bernard from Desmos",
+    "answers": [
+      {
+        "rawTitle": "Jelly, 15 bytes",
+        "questionId": 248820,
+        "answerId": 248844,
+        "score": 0,
+        "bytes": 15,
+        "language": "Jelly"
+      },
+      {
+        "rawTitle": "Python, 76 bytes",
+        "questionId": 248820,
+        "answerId": 248836,
+        "score": 1,
+        "bytes": 76,
+        "language": "Python"
+      },
+      {
+        "rawTitle": "05AB1E, 17 bytes",
+        "questionId": 248820,
+        "answerId": 248835,
+        "score": 1,
+        "bytes": 17,
+        "language": "05AB1E"
+      },
+      {
+        "rawTitle": "Python 3 with numpy, 77 bytes",
+        "questionId": 248820,
+        "answerId": 248831,
+        "score": 1,
+        "bytes": 77,
+        "language": "Python 3 with numpy"
+      },
+      {
+        "rawTitle": "JavaScript (ES6), 95 bytes",
+        "questionId": 248820,
+        "answerId": 248824,
+        "score": 3,
+        "bytes": 95,
+        "language": "JavaScript"
+      },
+      {
+        "rawTitle": "Factor, 90 89 83 bytes",
+        "questionId": 248820,
+        "answerId": 248828,
+        "score": 4,
+        "bytes": 83,
+        "language": "Factor"
+      },
+      {
+        "rawTitle": "PARI/GP, 52 bytes",
+        "questionId": 248820,
+        "answerId": 248823,
+        "score": 5,
+        "bytes": 52,
+        "language": "PARI/GP"
+      },
+      {
+        "rawTitle": "Python, 119 bytes",
+        "questionId": 248820,
+        "answerId": 248826,
+        "score": 1,
+        "bytes": 119,
+        "language": "Python"
+      },
+      {
+        "rawTitle": "Desmos, 94 bytes",
+        "questionId": 248820,
+        "answerId": 248827,
+        "score": 4,
+        "bytes": 94,
+        "language": "Desmos"
+      },
+      {
+        "rawTitle": "Python 3, 138 bytes",
+        "questionId": 248820,
+        "answerId": 248825,
+        "score": 2,
+        "bytes": 138,
+        "language": "Python 3"
+      },
+      {
+        "rawTitle": "K (ngn/k), 21 bytes",
+        "questionId": 248820,
+        "answerId": 248821,
+        "score": 10,
+        "bytes": 21,
+        "language": "K"
+      }
+    ]
+  },
+  {
     "questionId": 248809,
     "score": 15,
     "title": "Gray coded Gray code convertor",
@@ -3785,101 +3880,6 @@
         "score": 0,
         "bytes": 650,
         "language": "Python3"
-      }
-    ]
-  },
-  {
-    "questionId": 248820,
-    "score": 14,
-    "title": "Create Bernard from Desmos",
-    "answers": [
-      {
-        "rawTitle": "Jelly, 15 bytes",
-        "questionId": 248820,
-        "answerId": 248844,
-        "score": 0,
-        "bytes": 15,
-        "language": "Jelly"
-      },
-      {
-        "rawTitle": "Python, 76 bytes",
-        "questionId": 248820,
-        "answerId": 248836,
-        "score": 1,
-        "bytes": 76,
-        "language": "Python"
-      },
-      {
-        "rawTitle": "05AB1E, 17 bytes",
-        "questionId": 248820,
-        "answerId": 248835,
-        "score": 1,
-        "bytes": 17,
-        "language": "05AB1E"
-      },
-      {
-        "rawTitle": "Python 3 with numpy, 77 bytes",
-        "questionId": 248820,
-        "answerId": 248831,
-        "score": 1,
-        "bytes": 77,
-        "language": "Python 3 with numpy"
-      },
-      {
-        "rawTitle": "JavaScript (ES6), 95 bytes",
-        "questionId": 248820,
-        "answerId": 248824,
-        "score": 3,
-        "bytes": 95,
-        "language": "JavaScript"
-      },
-      {
-        "rawTitle": "Factor, 90 89 83 bytes",
-        "questionId": 248820,
-        "answerId": 248828,
-        "score": 4,
-        "bytes": 83,
-        "language": "Factor"
-      },
-      {
-        "rawTitle": "PARI/GP, 52 bytes",
-        "questionId": 248820,
-        "answerId": 248823,
-        "score": 5,
-        "bytes": 52,
-        "language": "PARI/GP"
-      },
-      {
-        "rawTitle": "Python, 119 bytes",
-        "questionId": 248820,
-        "answerId": 248826,
-        "score": 1,
-        "bytes": 119,
-        "language": "Python"
-      },
-      {
-        "rawTitle": "Desmos, 94 bytes",
-        "questionId": 248820,
-        "answerId": 248827,
-        "score": 4,
-        "bytes": 94,
-        "language": "Desmos"
-      },
-      {
-        "rawTitle": "Python 3, 138 bytes",
-        "questionId": 248820,
-        "answerId": 248825,
-        "score": 2,
-        "bytes": 138,
-        "language": "Python 3"
-      },
-      {
-        "rawTitle": "K (ngn/k), 21 bytes",
-        "questionId": 248820,
-        "answerId": 248821,
-        "score": 10,
-        "bytes": 21,
-        "language": "K"
       }
     ]
   },
@@ -4684,7 +4684,7 @@
         "answerId": 248308,
         "score": 2,
         "bytes": 72,
-        "language": "Python 3.10 - 72 bytes"
+        "language": "Python 3.10"
       },
       {
         "rawTitle": "Retina 0.8.2, 64 bytes",
@@ -4780,7 +4780,7 @@
         "answerId": 248130,
         "score": 2,
         "bytes": 119,
-        "language": "Python 3.10.4 - 119 bytes"
+        "language": "Python 3.10.4"
       }
     ]
   },
