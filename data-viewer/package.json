@@ -2,6 +2,7 @@
   "name": "data-viewer",
   "version": "0.1.0",
   "private": true,
+  "homepage": "/code-golf-stats",
   "dependencies": {
     "@types/node": "^16.11.41",
     "@types/react": "^17.0.47",
