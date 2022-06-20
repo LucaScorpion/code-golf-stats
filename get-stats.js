@@ -124,12 +124,13 @@ console.log(`Got ${allQuestions.length} questions.`);
 
 console.log('Filtering question tags.');
 const questions = allQuestions.filter((q) => {
+  // Check if the question includes the code-golf tag.
+  if (!q.tags.includes('code-golf')) {
+    return false;
+  }
+
+  // Check if the question includes a tag we want to skip.
   for (const tag of skipQuestionTags) {
-    // Check if the question includes the code-golf tag.
-    if (!q.tags.includes('code-golf')) {
-      return false;
-    }
-    // Check if the question includes a tag we want to skip.
     if (q.tags.includes(tag)) {
       return false;
     }
