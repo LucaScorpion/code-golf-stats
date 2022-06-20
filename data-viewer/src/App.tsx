@@ -1,15 +1,15 @@
 import React, { useEffect, useState } from 'react';
 import './App.scss';
-import { getData, Question } from './data';
+import { getData, GolfData } from './data';
 import { LanguageFrequency } from './charts/LanguageFrequency';
 import { ExternalLink } from './components/ExternalLink';
 import { ByteSizes } from './charts/ByteSizes';
 
 export const App: React.FC = () => {
-  const [rawData, setRawData] = useState<Question[]>();
+  const [data, setData] = useState<GolfData>();
 
   useEffect(() => {
-    getData().then(setRawData);
+    getData().then(setData);
   }, []);
 
   return (
@@ -24,12 +24,12 @@ export const App: React.FC = () => {
         on
         GitHub: <ExternalLink href="https://github.com/LucaScorpion/code-golf-stats">LucaScorpion/code-golf-stats</ExternalLink>.
       </p>
-      {!rawData
+      {!data
         ? <h2>Loading the data...</h2>
         : (
           <>
-            <LanguageFrequency rawData={rawData} />
-            <ByteSizes rawData={rawData} />
+            <LanguageFrequency data={data} />
+            <ByteSizes data={data} />
           </>
         )}
     </div>
